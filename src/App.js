@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const AppContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -226,6 +227,7 @@ const App = () => {
 
   return (
     <AppContainer>
+      <h2>Comparador de precios</h2>
       <ChatContainer>
         {messages.map((message, idx) => (
           <Message key={idx} isUser={message.isUser}>
