@@ -1,5 +1,11 @@
+# netlify.toml
+
+[build]
+command = "npm run build" # Replace this with your build command if different
+publish = "build" # The folder to publish after build (typically "build" for React)
+
 [[redirects]]
 force = true
-from = "/api/*"
-status = 200
-to = "http://40.233.5.109:3000/api/:splat"
+from = "http://*"
+status = 301
+to = "https://:splat"
