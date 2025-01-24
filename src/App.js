@@ -158,7 +158,7 @@ const App = () => {
     try {
       console.log(query);
       
-      const response = await fetch('http://40.233.5.109:3000/api/scrape', {
+      const response = await fetch('https://api.freelance-evans.pro/api/scrape', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ storeName: 'soriana', query }),
